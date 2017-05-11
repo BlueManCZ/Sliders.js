@@ -13,6 +13,9 @@ Funkce **createSuperTable()** využívá předchozí funkci a vrací HTML tabulk
 ## Použití
 
 Stáhněte soubor **CreateSuperElement.js** vedle vašeho .html souboru a importujte následujícím řádkem:
+```
+<script type="text/javascript" src="CreateSuperElement.js"></script>
+```
 
 
 // createSuperElement(type, attributes, innerHTML);
