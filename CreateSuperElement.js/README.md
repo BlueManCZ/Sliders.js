@@ -30,8 +30,10 @@ var element = createSuperElement(type, attributes, innerHTML);
 var tabulka = createSuperTable(data, attributes);
 ```
 - **data** je multidimenzionální pole, které svou strukturou udává strukturu tabulky. Např: **[[['Dogs'],['Cats']],[[13],[15]]]**  
-[  
-[['Cell1A'], ['Cell2A']],  
-[['Cell1B'], ['Cell2B']]  
+```
+[
+[['Cell1A'], ['Cell2A']],
+[['Cell1B'], ['Cell2B']]
 ]
+```
 - **atributes** bude slovník atributů. Např: **{"align":"center", "onclick":"funkce()"}**
