@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Your Website</title>
+</head>
+
+<body>
+
+	<div id="first">
+	This is first div
+	</div>
+
+	<div id="second">
+	This is second div
+	</div>
+
+	<script type="text/javascript" src="CreateSuperElement.js"></script>
+
+	<script>
+
+		var nadpis = createSuperElement('h2', {'onmousemove':'this.style.color = "red"', 'onmouseout':'this.style.color = "black"', 'align':'center'}, 'Welcome!');
+		first.appendChild(nadpis);
+
+		var table_data = [[['Dogs'],['Cats']],[[13],[15]]];
+		var tabulka = createSuperTable(table_data, {'border':1, 'align':'center', 'width':'120px'});
+		second.appendChild(tabulka);
+
+	</script>
+
+</body>
+
+</html>
