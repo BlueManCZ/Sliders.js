@@ -1,15 +1,16 @@
 # CreateSuperElement.js
 
-CreateSuperElement.js is JavaScript library, which contains two main functions:  
+CreateSuperElement.js je JavaScriptová knihovna, která obsahuje dvě hlavní funkce:  
 **createSuperElement()** and **createSuperTable()**.
 
-## Features
+## Základy
 
-Function createSuperElement() create HTML element with attributes, which should be specified in function.
+Funkce **createSuperElement()** vrátí HTML element, který můžeme obohatit o atributy a vnitřní HTML, pokud je uvedeme v parametrech funkce.  
+Funkce **createSuperTable()** využívá předchozí funkci a vrací HTML tabulku, kterou vytvoří na základě dat, které uvedeme v parametrech funkce.
 
-## Usage:
+## Použití:
 
-Download file **CreateSuperElement.js** to your project and import it with line:
+Stáhněte soubor **CreateSuperElement.js** vedle vašeho .html souboru a importujte následujícím řádkem:
 
 
 // createSuperElement(type, attributes, innerHTML);
