@@ -21,7 +21,6 @@ Následně můžete HTML elementy v JS vytvářet v následujícím tvaru:
 ```
 var element = createSuperElement(type, attributes, innerHTML);
 ```
-Kde
 - **type** je povinný typ elementu v řetězci. Např: "h1", "div" nebo "img"
 - **atributes** je nepovinný slovník atributů. Např: {'align':'center', 'onclick':'funkce()'}
 - **innerHTML** může být další element, obyčejný text nebo může zůstat prázdný.
@@ -30,6 +29,5 @@ Kde
 ```
 var tabulka = createSuperTable(data, attributes);
 ```
-Kde
 - **data** je multidimenzionální pole, které svou strukturou udává strukturu tabulky.
 - **atributes** bude slovník atributů. Např: {'align':'center', 'onclick':'funkce()'}
