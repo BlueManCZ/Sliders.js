@@ -1,5 +1,5 @@
 # CreateSuperElement.js
-## *Jednoduché vytváření HTML objektů v JS!*
+### *Jednoduché vytváření HTML objektů v JS!*
 
 CreateSuperElement.js je JavaScriptová knihovna, která obsahuje dvě hlavní funkce:  
 **createSuperElement()** and **createSuperTable()**.
@@ -17,6 +17,8 @@ Stáhněte soubor **CreateSuperElement.js** vedle vašeho .html souboru a v .htm
 ```
 <script type="text/javascript" src="CreateSuperElement.js"></script>
 ```
-
-
-// createSuperElement(type, attributes, innerHTML);
+Následně můžete elementy vytvářet v JS vytvářet v následujícím tvaru:
+```
+var element = createSuperElement(**type**, **attributes**, **innerHTML**);
+```
+Kde **type** bude typ elementu. Např: "h1","div" nebo "img".
