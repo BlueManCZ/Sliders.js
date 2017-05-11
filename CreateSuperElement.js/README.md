@@ -19,6 +19,9 @@ Stáhněte soubor **CreateSuperElement.js** vedle vašeho .html souboru a v .htm
 ```
 Následně můžete elementy vytvářet v JS vytvářet v následujícím tvaru:
 ```
-var element = createSuperElement(**type**, **attributes**, **innerHTML**);
+var element = createSuperElement(type, attributes, innerHTML);
 ```
-Kde **type** bude typ elementu. Např: "h1","div" nebo "img".
+Kde
+- **type** bude typ elementu. Např: 'h1','div' nebo 'img'
+- **atributes** bude slovník atributů. Např: {'align':'center', 'onclick':'funkce()'}
+- **innerHTML** může být další element, nebo obyčejný text.
