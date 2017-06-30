@@ -19,11 +19,12 @@ Stáhněte soubor **CreateSuperElement.js** vedle vašeho .html souboru a v .htm
 ```
 Následně můžete HTML elementy v JS vytvářet v následujícím tvaru:
 ```
-var element = createSuperElement(type, attributes, innerHTML);
+var element = createSuperElement(type, attributes, innerHTML, style);
 ```
 - **type** je povinný typ elementu v řetězci. Např: **"h1"**, **"div"** nebo **"img"**
 - **atributes** je nepovinný slovník atributů. Např: **{"align":"center", "onclick":"funkce()"}**
 - **innerHTML** může být další element, obyčejný text nebo může zůstat prázdný.
+- **style** je nepovinný slovník CSS stylů ve tvaru: **{"color":"red", "font-weight":"bold"}**
 
 
 ```
