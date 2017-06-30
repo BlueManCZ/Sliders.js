@@ -1,7 +1,7 @@
 var element;
 var table;
 
-function createSuperElement(type, attributes=0, innerHTML=0) {
+function createSuperElement(type, attributes=0, innerHTML=0, style=0) {
 	element = document.createElement(type);
 
 	if (innerHTML && typeof innerHTML === 'object') element.appendChild(innerHTML);
@@ -11,6 +11,14 @@ function createSuperElement(type, attributes=0, innerHTML=0) {
 		for (var i in attributes) {
 			element.setAttribute(i, attributes[i]);
 		}
+	}
+
+	if (style) {
+		var styles = '';
+		for (var i in style) {
+			styles += i+':'+style[i]+';';
+		}
+		element.setAttribute('style', styles);
 	}
 
 	return element;
