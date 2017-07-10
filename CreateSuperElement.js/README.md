@@ -34,7 +34,7 @@ var tabulka = createSuperTable(data, attributes);
 ```
 [
 [['Cell1A'], ['Cell2A']],
-[['Cell1B'], ['Cell2B', {'onclick':'myfunction()}, {'color':'red'}]]
+[['Cell1B'], ['Cell2B', {'onclick':'myfunction()'}, {'color':'red'}]]
 ]
 ```
 - **atributes** bude slovník atributů pro tabulku. Např: **{"align":"center", "onclick":"funkce()"}**
