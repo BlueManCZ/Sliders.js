@@ -9,7 +9,7 @@ CreateSuperElement.js je JavaScriptová knihovna, která obsahuje dvě hlavní f
 Funkce **createSuperElement()** vrátí HTML element, který můžeme obohatit o atributy a vnitřní HTML, pokud je uvedeme v parametrech funkce.  
 Funkce **createSuperTable()** využívá předchozí funkci a vrací HTML tabulku, kterou vytvoří na základě dat, které uvedeme v parametrech funkce.
 
-#### JSFiddle demonstrace [zde](https://jsfiddle.net/BlueManCZ/10waoshv/3/).
+#### JSFiddle demonstrace [zde](https://jsfiddle.net/BlueManCZ/10waoshv/4/).
 
 ## Použití
 
