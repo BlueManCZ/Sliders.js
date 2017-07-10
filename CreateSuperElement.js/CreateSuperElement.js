@@ -31,7 +31,7 @@ function createSuperTable(data, attributes=0) {
 		table.appendChild(createSuperElement('tr'));
 
 		for (var j in data[i]) { // cells
-			table.lastChild.appendChild(createSuperElement('td', data[i][j][1], data[i][j][0]));
+			table.lastChild.appendChild(createSuperElement('td', data[i][j][1], data[i][j][0], data[i][j][2]));
 		}
 	}
 
