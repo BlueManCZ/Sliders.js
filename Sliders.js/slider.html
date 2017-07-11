@@ -12,56 +12,10 @@
 <div class="content">
     <input type="text" class="slider1" name="value1" text="Hodnota 1:" min="0" max="10" value="1" round="0" animate="no">
     <input type="text" class="slider1" name="value2" text="Hodnota 2:" min="1000" max="2000" value="1200" round="1">
+	<input type="text" class="slider1" name="value3" text="Value 3:" min="90">
 </div>
 
-<script type="text/javascript" src="http://webly3d.net:8000/static/CreateSuperElement.js"></script>
-
-<script>
-    var element;
-    var table;
-
-    function createSuperElement(type, attributes=0, innerHTML=0, style=0) {
-        element = document.createElement(type);
-
-        if (innerHTML && typeof innerHTML === 'object') element.appendChild(innerHTML);
-        else if (innerHTML) element.innerHTML = innerHTML;
-
-        if (attributes) {
-            for (var i in attributes) {
-                element.setAttribute(i, attributes[i]);
-            }
-        }
-
-        if (style) {
-            var styles = '';
-            for (var i in style) {
-                styles += i+':'+style[i]+';';
-            }
-            element.setAttribute('style', styles);
-        }
-
-        return element;
-    }
-
-    function createSuperTable(data, attributes=0) {
-        table = createSuperElement('table', attributes);
-
-        for (var i in data) { // rows
-            table.appendChild(createSuperElement('tr'));
-
-            for (var j in data[i]) { // cells
-                table.lastChild.appendChild(createSuperElement('td', data[i][j][1], data[i][j][0], data[i][j][2]));
-            }
-        }
-
-        return table;
-    }
-</script>
-
-
-
-
-
+<script type="text/javascript" src="../CreateSuperElement.js/CreateSuperElement.js"></script>
 <script type="text/javascript" src="sliders.js"></script>
 
 </body>

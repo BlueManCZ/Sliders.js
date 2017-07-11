@@ -1,19 +1,19 @@
 var element;
 var table;
 
-function createSuperElement(type, attributes=0, innerHTML=0, style=0) {
+function createSuperElement(type, attributes='', innerHTML='', style='') {
 	element = document.createElement(type);
 
-	if (innerHTML && typeof innerHTML === 'object') element.appendChild(innerHTML);
-	else if (innerHTML) element.innerHTML = innerHTML;
+	if (innerHTML !== '' && typeof innerHTML === 'object') element.appendChild(innerHTML);
+	else if (innerHTML !== '') element.innerHTML = innerHTML;
 
-	if (attributes) {
+	if (attributes !== '') {
 		for (var i in attributes) {
 			element.setAttribute(i, attributes[i]);
 		}
 	}
 
-	if (style) {
+	if (style !== '') {
 		var styles = '';
 		for (var i in style) {
 			styles += i+':'+style[i]+';';
@@ -24,7 +24,7 @@ function createSuperElement(type, attributes=0, innerHTML=0, style=0) {
 	return element;
 }
 
-function createSuperTable(data, attributes=0) {
+function createSuperTable(data, attributes='') {
 	table = createSuperElement('table', attributes);
 
 	for (var i in data) { // rows

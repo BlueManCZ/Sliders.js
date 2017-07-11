@@ -13,16 +13,16 @@
     font-family: 'Source Sans Pro', sans-serif;
     display: inline;
     line-height: 28px;
-    margin: 0 3px 0 9px;
+    margin: 0 -4px 0 9px;
 }
 
 .slider1_parent .slider1 {
     border: solid 1px #c2c2c2;
     width: 60px;
     padding: 0 3px 0 3px;
-    margin: 4px;
     height: 18px;
     vertical-align: top;
+    margin: 4px 4px 4px 10px;
 }
 
 .slider1_parent .slider_main_block {
@@ -55,7 +55,7 @@
 .slider1_parent .slider_fill {
     position: absolute;
     height: 12px;
-    width: 10%;
+    width: 0;
     background-color: #7ef4ff;
 }
 
@@ -69,7 +69,7 @@
     margin: 2px;
     border: solid 0.5px #a2a2a2;
     cursor: pointer;
-    left: calc(10% - 11px);
+    left: calc(0% - 11px);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;

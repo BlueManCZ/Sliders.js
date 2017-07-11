@@ -2,6 +2,7 @@ var mousePosition, active_element;
 var offset = [0,0];
 var isDown = false;
 var slider_min = -11;
+var default_range = [0,100];
 
 var slider_positions = {};
 var slider_percentages = {};
@@ -15,7 +16,6 @@ document.addEventListener('mouseup', function() {
 }, true);
 
 document.addEventListener('mousemove', function(event) {
-    //event.preventDefault();
     if (isDown) {
         mousePosition = {x:event.clientX, y:event.clientY};
 
@@ -23,21 +23,26 @@ document.addEventListener('mousemove', function(event) {
         var slider_groover = active_element.parentElement.firstChild;
         var name = current_input.name;
         var slider_max = slider_groover.clientWidth+slider_min;
-        var range = [parseInt(current_input.min) || 0, parseInt(current_input.max) || 100];
+        var min = parseFloat(current_input.min);
+        var max = parseFloat(current_input.max);
+        if ((min !== '' && max !== '') && (min < max)) {
+            var range = [min, max]
+        } else {
+            var range = default_range;
+        }
         var left_pos = mousePosition.x + offset[0];
 
         if (left_pos < slider_min) {
             slider_positions[name] = slider_min;
-            left_pos = slider_min;
         } else if (left_pos > slider_max) {
             slider_positions[name] = slider_max+2;
-            left_pos = slider_max+2;
         } else {
             slider_positions[name] = left_pos;
         }
 
         var percentages = 100*(slider_positions[name]-slider_min-2)/slider_groover.clientWidth;
         var value = range[0]+(range[1]-range[0])*percentages/100;
+
         setSliderTo(name, value);
     }
 }, true);
@@ -49,7 +54,12 @@ for (var i = 0; i < sliders.length; i++) {
     sliders[i].parentNode.insertBefore(slider_parent, sliders[i]);
     slider_parent.appendChild(sliders[i]);
 
-    var text = createSuperElement('p', {'class':'title'}, sliders[i].getAttribute('text'));
+    if (sliders[i].getAttribute('text')) {
+        var text = createSuperElement('p', {'class':'title'}, sliders[i].getAttribute('text'));
+    } else {
+        var text = createSuperElement('span');
+    }
+
     slider_parent.insertBefore(text, sliders[i]);
 
     var slider_main_block = createSuperElement('div', {'class':'slider_main_block'});
@@ -58,7 +68,15 @@ for (var i = 0; i < sliders.length; i++) {
     var slider_fill = createSuperElement('div', {'class':'slider_fill'});
     var slider_rider = createSuperElement('div', {'class':'slider_rider'});
 
-    var table_data = [[[sliders[i].min, {'class':'left'}],[sliders[i].max, {'class':'right'}]]];
+    var min = parseFloat(sliders[i].min);
+    var max = parseFloat(sliders[i].max);
+    if ((min !== '' && max !== '') && (min < max)) {
+        var range = [min, max]
+    } else {
+        var range = default_range;
+    }
+
+    var table_data = [[[range[0], {'class':'left'}],[range[1], {'class':'right'}]]];
     var slider_range = createSuperTable(table_data, {'class':'slider_range'});
 
     slider_groove.appendChild(slider_fill);
@@ -90,7 +108,14 @@ for (var i = 0; i < sliders.length; i++) {
         var current_input = this.parentElement.parentElement.parentElement.childNodes[1];
         var name = current_input.name;
         var click_position = e.clientX-my_offset(this).left;
-        var range = [parseInt(current_input.min) || 0, parseInt(current_input.max) || 100];
+
+        var min = parseFloat(current_input.min);
+        var max = parseFloat(current_input.max);
+        if ((min !== '' && max !== '') && (min < max)) {
+            var range = [min, max]
+        } else {
+            var range = default_range;
+        }
 
         if (current_input.getAttribute('animate') !== 'no') {
             this.parentNode.lastChild.style.transition = 'left 0.2s ease-in-out';
@@ -105,7 +130,6 @@ for (var i = 0; i < sliders.length; i++) {
 
     sliders[i].addEventListener('change', function(e) {
         setSliderTo(this.name, this.value);
-        console.log(this.value);
     }, true);
 
     if (!sliders[i].value) sliders[i].value = 0;
@@ -116,23 +140,29 @@ function setSliderTo(name, value) {
     var slider = document.getElementsByName(name)[0];
     value = parseFloat(value);
 
-    if (value >= parseFloat(slider.min) && value <= parseFloat(slider.max) && !isNaN(value)) {
-        var data_round = slider.getAttribute('round') || 0;
-        value = round(value, data_round);
-        slider_percentages[name] = 100*(value - slider.min)/(slider.max - slider.min);
-        slider_values[name] = value;
-        slider.parentNode.childNodes[2].firstChild.firstChild.firstChild.style.width=Math.round(slider_percentages[name])+'%';
-        slider.parentNode.childNodes[2].firstChild.lastChild.style.left = 'calc('+Math.round(slider_percentages[name])+'% - 11px )';
-        slider.value = value;
+    var min = parseFloat(slider.min);
+    var max = parseFloat(slider.max);
+    if ((min !== '' && max !== '') && (min < max)) {
+        var range = [min, max]
     } else {
-        console.log('Value is out of slider range: '+slider.min+'-'+slider.max);
-        if (value < parseFloat(slider.min) && !isNaN(value)) {
-            setSliderTo(name, slider.min);
-        } else if (value > parseFloat(slider.max) && !isNaN(value)) {
-            setSliderTo(name, slider.max);
-        } else {
-            slider.value = slider_values[name];
-        }
+        var range = default_range;
+    }
+
+    if (value >= range[0] && value <= range[1] && !isNaN(value)) {
+        var data_round = slider.getAttribute('round') || 0;
+        if (slider.getAttribute('smooth') !== 'yes') value = round(value, data_round);
+        slider_percentages[name] = 100*(value - range[0])/(range[1] - range[0]);
+        slider.parentNode.childNodes[2].firstChild.firstChild.firstChild.style.width=round(slider_percentages[name], 2)+'%';
+        slider.parentNode.childNodes[2].firstChild.lastChild.style.left = 'calc('+round(slider_percentages[name], 2)+'% - 11px )';
+        value = round(value, data_round);
+        slider.value = value;
+        slider_values[name] = value;
+
+    } else {
+        //console.log('Value ['+value+'] is out of slider range: '+range[0]+'-'+range[1] || default_range[1]);
+        if (value < range[0] && !isNaN(value)) setSliderTo(name, range[0]);
+        else if (value > range[1] && !isNaN(value)) setSliderTo(name, range[1]);
+        else slider.value = slider_values[name];
     }
 }
 
