@@ -2,7 +2,9 @@ var mousePosition, active_element;
 var offset = [0,0];
 var isDown = false;
 var slider_min = -11;
+
 var default_range = [0,100];
+var default_round = 0;
 
 var slider_positions = {};
 var slider_percentages = {};
@@ -149,7 +151,7 @@ function setSliderTo(name, value) {
     }
 
     if (value >= range[0] && value <= range[1] && !isNaN(value)) {
-        var data_round = slider.getAttribute('round') || 0;
+        var data_round = slider.getAttribute('round') !== null ? slider.getAttribute('round') : default_round;
         if (slider.getAttribute('smooth') !== 'yes') value = round(value, data_round);
         slider_percentages[name] = 100*(value - range[0])/(range[1] - range[0]);
         slider.parentNode.childNodes[2].firstChild.firstChild.firstChild.style.width=round(slider_percentages[name], 2)+'%';

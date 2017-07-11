@@ -91,6 +91,8 @@ There are many attributes, which can modify slider's functionalities.
 ```
 <input type="text" class="slider1" name="value1" text="Value 1:" min="10" max="20" value="15" round="2">
 ```
+
+You can of course use the default input attributes as **id**, **autocomplete**, **title**, etc.
 ### 4. Always up-to-date version?
 
 Don't download files but use newest files directly from GitHub repository.
