@@ -65,12 +65,12 @@ for (var i = 0; i < sliders.length; i++) {
 
     slider_parent.insertBefore(text, sliders[i]);
 
-    default_color = sliders[i].getAttribute('color') !== null ? sliders[i].getAttribute('color') : default_color;
+    var color = sliders[i].getAttribute('color') !== null ? sliders[i].getAttribute('color') : default_color;
 
     var slider_main_block = createSuperElement('div', {'class':'main_block'});
     var slider_groove_parent = createSuperElement('div', {'class':'groove_parent'});
     var slider_groove = createSuperElement('div', {'class':'groove'});
-    var slider_fill = createSuperElement('div', {'class':'fill'}, '', {'background-color':default_color});
+    var slider_fill = createSuperElement('div', {'class':'fill'}, '', {'background-color':color});
     var slider_rider = createSuperElement('div', {'class':'rider'});
 
     var min = parseFloat(sliders[i].min);

@@ -15,8 +15,8 @@ First **download** files: [CreateSuperElement.js](https://github.com/BlueManCZ/J
 Then **include** these files into your HTML file:
 ##### JavaScript in <body\>
 ```html
-<script type="text/javascript" src="sliders.js"></script>
 <script type="text/javascript" src="CreateSuperElement.js"></script>
+<script type="text/javascript" src="sliders.js"></script>
 ```
 ##### CSS in <head\>
 ```html
@@ -100,8 +100,8 @@ Don't download files but use newest files directly from GitHub repository.
 
 ##### JavaScript in <body\>
 ```html
-<script type="text/javascript" src="https://rawgit.com/BlueManCZ/JavaScript-components/master/Sliders.js/sliders.js"></script>
 <script type="text/javascript" src="https://rawgit.com/BlueManCZ/JavaScript-components/master/CreateSuperElement.js/CreateSuperElement.js"></script>
+<script type="text/javascript" src="https://rawgit.com/BlueManCZ/JavaScript-components/master/Sliders.js/sliders.js"></script>
 ```
 ##### CSS in <head\>
 ```html
