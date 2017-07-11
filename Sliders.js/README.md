@@ -42,3 +42,17 @@ There are many attributes, which can modify slider's functionalities.
 - **round**="number" - Decimal places of value rounding.
 - **animate**="yes/no" - Choose one for enable or disable slider animation. (default is yes)
 - **smooth**="yes/no" - Smooth movement of small range slider. (default is no)
+
+### 4. Always up-to-date version?
+
+Don't download files but use newest files directly from GitHub repository.
+
+##### JavaScript in <body\>
+```
+<script type="text/javascript" src="https://rawgit.com/BlueManCZ/JavaScript-components/master/Sliders.js/sliders.js"></script>
+<script type="text/javascript" src="https://rawgit.com/BlueManCZ/JavaScript-components/master/CreateSuperElement.js/CreateSuperElement.js"></script>
+```
+##### CSS in <head\>
+```
+<link rel=stylesheet href="https://rawgit.com/BlueManCZ/JavaScript-components/blob/master/Sliders.js/slider.css">
+```
