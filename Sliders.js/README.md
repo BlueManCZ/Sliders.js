@@ -14,17 +14,17 @@ First **download** files: [CreateSuperElement.js](https://github.com/BlueManCZ/J
 
 Then **include** these files into your HTML file:
 ##### JavaScript in <body\>
-```
+```html
 <script type="text/javascript" src="sliders.js"></script>
 <script type="text/javascript" src="CreateSuperElement.js"></script>
 ```
 ##### CSS in <head\>
-```
+```html
 <link rel=stylesheet href="slider.css">
 ```
 ### 2. Easy to use
 You can easily create slider as HTML input.
-```
+```html
 <input type="text" class="slider1" name="value1" text="Value 1:">
 ```
 
@@ -89,7 +89,7 @@ There are many attributes, which can modify slider's functionalities.
 </table>
 
 **Use attributes in input tag:** (example)
-```
+```html
 <input type="text" class="slider1" name="value1" text="Value 1:" min="10" max="20" value="15" round="2">
 ```
 
@@ -99,11 +99,11 @@ You can of course use the default input attributes as **id**, **autocomplete**, 
 Don't download files but use newest files directly from GitHub repository.
 
 ##### JavaScript in <body\>
-```
+```html
 <script type="text/javascript" src="https://rawgit.com/BlueManCZ/JavaScript-components/master/Sliders.js/sliders.js"></script>
 <script type="text/javascript" src="https://rawgit.com/BlueManCZ/JavaScript-components/master/CreateSuperElement.js/CreateSuperElement.js"></script>
 ```
 ##### CSS in <head\>
-```
+```html
 <link rel=stylesheet href="https://rawgit.com/BlueManCZ/JavaScript-components/master/Sliders.js/slider.css">
 ```
