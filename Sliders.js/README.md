@@ -35,14 +35,62 @@ There are many attributes, which can modify slider's functionalities.
 
 **Here is list of them:**
 
-- **text**="visible slider title"
-- **min**="number" - Lower boundary of slider, must be lower than max.
-- **max**="number" - Upper boundary of slider, must be higher than min.
-- **value**="number" - Default value of slider.
-- **round**="number" - Decimal places of value rounding.
-- **animate**="yes/no" - Choose one for enable or disable slider animation. (default is yes)
-- **smooth**="yes/no" - Smooth movement of small range slider. (default is no)
+<table>
+  <tr>
+    <th>Atribute
+    <th>Value
+    <th>Description
+    <th>Default
+  </tr>
+  <tr>
+    <td><b>text
+    <td>text
+    <td>Visible slider title
+    <td>-
+  </tr>
+  <tr>
+    <td><b>min
+    <td>number
+    <td>Lower boundary of slider, must be lower than max
+    <td>0
+  </tr>
+  <tr>
+    <td><b>max
+    <td>number
+    <td>Upper boundary of slider, must be higher than min
+    <td>100
+  </tr>
+  <tr>
+    <td><b>value
+    <td>number
+    <td>Default value of slider
+    <td>min
+  </tr>
+  <tr>
+    <td><b>round
+    <td>number
+    <td>Decimal places of value rounding
+    <td>0
+  </tr>
+  <tr>
+    <td><b>animate
+    <td>yes / no
+    <td>Enable or disable slider animation
+    <td>yes
+  </tr>
+  <tr>
+    <td><b>smooth
+    <td>yes / no
+    <td>Smooth movement of small range slider
+    <td>no
+  </tr>
 
+</table>
+
+**Use attributes in input tag:** (example)
+```
+<input type="text" class="slider1" name="value1" text="Value 1:" min="10" max="20" value="15" round="2">
+```
 ### 4. Always up-to-date version?
 
 Don't download files but use newest files directly from GitHub repository.
@@ -54,5 +102,5 @@ Don't download files but use newest files directly from GitHub repository.
 ```
 ##### CSS in <head\>
 ```
-<link rel=stylesheet href="https://rawgit.com/BlueManCZ/JavaScript-components/blob/master/Sliders.js/slider.css">
+<link rel=stylesheet href="https://rawgit.com/BlueManCZ/JavaScript-components/master/Sliders.js/slider.css">
 ```
