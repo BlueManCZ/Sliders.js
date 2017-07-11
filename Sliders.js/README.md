@@ -5,21 +5,21 @@ Sliders.js allows add practical, value sliders as inputs to your HTML forms.
 
 ## Futures
 
-### 1. Easy to setup
+#### 1. Easy to setup
 
 First **download** files: [CreateSuperElement.js](https://github.com/BlueManCZ/JavaScript-components/blob/master/CreateSuperElement.js/CreateSuperElement.js), [sliders.js](https://github.com/BlueManCZ/JavaScript-components/blob/master/Sliders.js/sliders.js) and [slider.css](https://github.com/BlueManCZ/JavaScript-components/blob/master/Sliders.js/slider.css).
 
 Then **import** this files to your HTML file:
-####JavaScript in <body\>
+##### JavaScript in <body\>
 ```
 <script type="text/javascript" src="sliders.js"></script>
 <script type="text/javascript" src="CreateSuperElement.js"></script>
 ```
-####CSS in <head\>
+##### CSS in <head\>
 ```
 <link rel=stylesheet href="slider.css">
 ```
-### 2. Easy to use
+#### 2. Easy to use
 You can easily create slider as HTML input.
 ```
 <input type="text" class="slider1" name="value1" text="Value 1:">
@@ -27,7 +27,7 @@ You can easily create slider as HTML input.
 
 **Important!** Each slider must have class slider1 and different name attribute!
 
-### 3. Customizable
+#### 3. Customizable
 
 There are many attributes, which can modify slider's functionalities.
 
