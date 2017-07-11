@@ -3,6 +3,8 @@
 
 Sliders.js allows add practical, value sliders as inputs to your HTML forms.
 
+> ![Screenshot](images/screenshot2.png)
+
 ## Futures
 
 ### 1. Easy to setup
