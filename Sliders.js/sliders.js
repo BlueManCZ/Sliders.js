@@ -5,6 +5,7 @@ var slider_min = -11;
 
 var default_range = [0,100];
 var default_round = 0;
+var default_color = '#7ef4ff';
 
 var slider_positions = {};
 var slider_percentages = {};
@@ -64,10 +65,12 @@ for (var i = 0; i < sliders.length; i++) {
 
     slider_parent.insertBefore(text, sliders[i]);
 
+    default_color = sliders[i].getAttribute('color') !== null ? sliders[i].getAttribute('color') : default_color;
+
     var slider_main_block = createSuperElement('div', {'class':'main_block'});
     var slider_groove_parent = createSuperElement('div', {'class':'groove_parent'});
     var slider_groove = createSuperElement('div', {'class':'groove'});
-    var slider_fill = createSuperElement('div', {'class':'fill'});
+    var slider_fill = createSuperElement('div', {'class':'fill'}, '', {'background-color':default_color});
     var slider_rider = createSuperElement('div', {'class':'rider'});
 
     var min = parseFloat(sliders[i].min);
