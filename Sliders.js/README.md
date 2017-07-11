@@ -5,6 +5,8 @@ Sliders.js allows you to add practical, value sliders as inputs to your HTML for
 
 > ![Screenshot](images/screenshot2.png)
 
+Check [JSFiddle demo](https://github.com/BlueManCZ/JavaScript-components/blob/master/CreateSuperElement.js/CreateSuperElement.js).
+
 ## Features
 
 ### 1. Easy to setup

@@ -2,9 +2,9 @@
 
 .slider1_parent {
     padding-bottom: 6px;
+    font-family: 'Source Sans Pro', sans-serif;
 
     .title {
-        font-family: 'Source Sans Pro', sans-serif;
         display: inline;
         line-height: 28px;
         margin: 0 -4px 0 9px;
@@ -72,7 +72,7 @@
             border-right: solid 2px #c5c5c5;
             height: 13px;
             display: block;
-            font-size: 13px;
+            font-size: 14px;
             margin: 4px auto auto;
             color: #848484;
 
@@ -83,14 +83,14 @@
                 .left {
                     width: 50%;
                     padding: 1px 5px;
-                    margin-top: -5px;
+                    margin-top: -9px;
                 }
 
                 .right {
                     width: 50%;
                     text-align: right;
                     padding: 1px 5px;
-                    margin-top: -5px;
+                    margin-top: -9px;
                 }
             }
         }
