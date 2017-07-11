@@ -27,7 +27,7 @@ You can easily create slider as HTML input.
 <input type="text" class="slider1" name="value1" text="Value 1:">
 ```
 
-**Important!** Each slider must have class slider1 and different name attribute!
+**Important!** Each slider must have same class "slider1" and different name attribute!
 
 ### 3. Customizable
 
