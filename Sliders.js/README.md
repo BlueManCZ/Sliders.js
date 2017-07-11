@@ -10,12 +10,12 @@ Sliders.js allows add practical, value sliders as inputs to your HTML forms.
 First **download** files: [CreateSuperElement.js](https://github.com/BlueManCZ/JavaScript-components/blob/master/CreateSuperElement.js/CreateSuperElement.js), [sliders.js](https://github.com/BlueManCZ/JavaScript-components/blob/master/Sliders.js/sliders.js) and [slider.css](https://github.com/BlueManCZ/JavaScript-components/blob/master/Sliders.js/slider.css).
 
 Then **import** this files to your HTML file:
-######JavaScript in <body\>
+#####JavaScript in <body\>
 ```
 <script type="text/javascript" src="sliders.js"></script>
 <script type="text/javascript" src="CreateSuperElement.js"></script>
 ```
-######CSS in <head\>
+#####CSS in <head\>
 ```
 <link rel=stylesheet href="slider.css">
 ```
