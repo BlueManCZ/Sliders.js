@@ -1,7 +1,7 @@
 # Sliders.js
-### *Simple and beautifull sliders in pure JavaScript!*
+### *Simple and beautiful sliders in pure JavaScript!*
 
-Sliders.js allows add practical, value sliders as inputs to your HTML forms.
+Sliders.js allows you to add practical, value sliders as inputs to your HTML forms.
 
 > ![Screenshot](images/screenshot2.png)
 
@@ -11,7 +11,7 @@ Sliders.js allows add practical, value sliders as inputs to your HTML forms.
 
 First **download** files: [CreateSuperElement.js](https://github.com/BlueManCZ/JavaScript-components/blob/master/CreateSuperElement.js/CreateSuperElement.js), [sliders.js](https://github.com/BlueManCZ/JavaScript-components/blob/master/Sliders.js/sliders.js) and [slider.css](https://github.com/BlueManCZ/JavaScript-components/blob/master/Sliders.js/slider.css).
 
-Then **import** this files to your HTML file:
+Then **import** these files to your HTML file:
 ##### JavaScript in <body\>
 ```
 <script type="text/javascript" src="sliders.js"></script>
