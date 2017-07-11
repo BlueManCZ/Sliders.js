@@ -11,7 +11,7 @@ Sliders.js allows you to add practical, value sliders as inputs to your HTML for
 
 First **download** files: [CreateSuperElement.js](https://github.com/BlueManCZ/JavaScript-components/blob/master/CreateSuperElement.js/CreateSuperElement.js), [sliders.js](https://github.com/BlueManCZ/JavaScript-components/blob/master/Sliders.js/sliders.js) and [slider.css](https://github.com/BlueManCZ/JavaScript-components/blob/master/Sliders.js/slider.css).
 
-Then **import** these files to your HTML file:
+Then **include** these files into your HTML file:
 ##### JavaScript in <body\>
 ```
 <script type="text/javascript" src="sliders.js"></script>
