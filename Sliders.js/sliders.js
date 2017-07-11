@@ -62,11 +62,11 @@ for (var i = 0; i < sliders.length; i++) {
 
     slider_parent.insertBefore(text, sliders[i]);
 
-    var slider_main_block = createSuperElement('div', {'class':'slider_main_block'});
-    var slider_groove_parent = createSuperElement('div', {'class':'slider_groove_parent'});
-    var slider_groove = createSuperElement('div', {'class':'slider_groove'});
-    var slider_fill = createSuperElement('div', {'class':'slider_fill'});
-    var slider_rider = createSuperElement('div', {'class':'slider_rider'});
+    var slider_main_block = createSuperElement('div', {'class':'main_block'});
+    var slider_groove_parent = createSuperElement('div', {'class':'groove_parent'});
+    var slider_groove = createSuperElement('div', {'class':'groove'});
+    var slider_fill = createSuperElement('div', {'class':'fill'});
+    var slider_rider = createSuperElement('div', {'class':'rider'});
 
     var min = parseFloat(sliders[i].min);
     var max = parseFloat(sliders[i].max);
