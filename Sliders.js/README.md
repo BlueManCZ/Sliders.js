@@ -37,7 +37,7 @@ There are many attributes, which can modify slider's functionalities.
 
 <table>
   <tr>
-    <th>Atribute
+    <th>Attribute
     <th>Value
     <th>Description
     <th>Default
