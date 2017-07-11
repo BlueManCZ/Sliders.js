@@ -5,7 +5,7 @@ Sliders.js allows you to add practical, value sliders as inputs to your HTML for
 
 > ![Screenshot](images/screenshot2.png)
 
-## Futures
+## Features
 
 ### 1. Easy to setup
 
