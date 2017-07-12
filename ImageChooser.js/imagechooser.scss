@@ -10,7 +10,7 @@
   }
 
   .select {
-    background-color: #fdfdfd;
+    background-color: #f2f2f2;
     border: solid 1px #c6c6c6;
     width: calc(100% - 25px);
     margin: auto;
@@ -58,10 +58,9 @@
   .preview {
     position: relative;
     padding-top: 30%;
-    background-color: #fdfdfd;
+    background-color: #f2f2f2;
     width: calc(100% - 20px);
-    margin: auto;
-    margin-top: 5px;
+    margin: 5px auto auto;
     border: dotted 1px #bcbcbc;
     border-radius: 5px;
 
@@ -72,7 +71,7 @@
       width: 100%;
       text-align: center;
       font-size: 20px;
-      color: #d1d1d1;
+      color: #afafaf;
     }
   }
 }
