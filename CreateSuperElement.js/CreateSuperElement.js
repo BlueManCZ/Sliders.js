@@ -1,7 +1,11 @@
 var element;
 var table;
 
-function createSuperElement(type, attributes='', innerHTML='', style='') {
+function createSuperElement(type, attributes, innerHTML, style) {
+	if (attributes === undefined) attributes = '';
+	if (innerHTML === undefined) innerHTML = '';
+	if (style === undefined) style = '';
+	
 	element = document.createElement(type);
 
 	if (innerHTML !== '' && typeof innerHTML === 'object') element.appendChild(innerHTML);
@@ -24,7 +28,8 @@ function createSuperElement(type, attributes='', innerHTML='', style='') {
 	return element;
 }
 
-function createSuperTable(data, attributes='') {
+function createSuperTable(data, attributes) {
+	if (attributes === undefined) attributes = '';
 	table = createSuperElement('table', attributes);
 
 	for (var i in data) { // rows
