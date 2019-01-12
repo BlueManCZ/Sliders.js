@@ -169,6 +169,8 @@ function setSliderTo(name, value) {
         else if (value > range[1] && !isNaN(value)) setSliderTo(name, range[1]);
         else slider.value = slider_values[name];
     }
+    
+    slider.onchange();
 }
 
 function my_offset(elem) {
