@@ -100,16 +100,3 @@ There are many attributes, which can modify slider's functionalities.
 ```
 
 You can of course use the default input attributes as **id**, **autocomplete**, **title**, etc.
-### 4. Always up-to-date version?
-
-Don't download files but use newest files directly from GitHub repository.
-
-##### JavaScript in <body\>
-```html
-<script type="text/javascript" src="https://rawgit.com/BlueManCZ/JavaScript-components/master/CreateSuperElement.js/CreateSuperElement.js"></script>
-<script type="text/javascript" src="https://rawgit.com/BlueManCZ/JavaScript-components/master/Sliders.js/sliders.js"></script>
-```
-##### CSS in <head\>
-```html
-<link rel=stylesheet href="https://rawgit.com/BlueManCZ/JavaScript-components/master/Sliders.js/slider.css">
-```
