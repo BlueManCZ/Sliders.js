@@ -2,7 +2,7 @@
 ### *Simple and beautiful sliders in pure JavaScript!*
 
 Sliders.js allows you to add practical, value sliders as inputs to your HTML forms.
-**Check [JSFiddle demo](http://webly3d.net/static/Sliders.js/slider.html).**
+**Check [live demo](http://webly3d.net/static/Sliders.js/slider.html).**
 
 > ![Screenshot](images/screenshot2.png)
 
