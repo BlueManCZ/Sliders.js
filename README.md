@@ -10,7 +10,7 @@ Sliders.js allows you to add practical, value sliders as inputs to your HTML for
 
 ### 1. Easy to setup
 
-First **download** files: [sliders.js](https://github.com/BlueManCZ/Sliders.js/blob/master/Sliders.js/sliders.js) and [slider.css](https://github.com/BlueManCZ/Sliders.js/blob/master/Sliders.js/slider.css).
+First **download** files: [sliders.js](https://github.com/BlueManCZ/Sliders.js/blob/master/sliders.js) and [slider.css](https://github.com/BlueManCZ/Sliders.js/blob/master/slider.css).
 
 Then **include** these files into your HTML file:
 ##### JavaScript in <body\>
